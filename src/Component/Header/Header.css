@@ -1,0 +1,12 @@
+.activecls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* backdrop-filter: blur(10px);  */
+    background-color: #b7004f2d;
+    z-index: 10;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    color : #b70050 !important; 
+  }
