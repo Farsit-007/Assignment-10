@@ -10,7 +10,7 @@ const Footer = () => {
                 <aside>
                     <div className='flex flex-col lg:flex-row gap-4 items-center'>
                         <figure className='h-[60px] w-[60px]' >
-                            {/* <img src={im} alt="" /> */}
+
                         </figure>
                         <div>
                             <h1 className="text-2xl md:text-3xl text-[#b70050] font-extrabold ">Fa<span className="text-white" >L</span>i's  Cra<span className="text-white" >f</span>t</h1>
@@ -22,14 +22,13 @@ const Footer = () => {
                     <h6 className="footer-title">Company</h6>
                     <div className="flex gap-3">
                         <Link to='/' className="link link-hover">Home</Link>
-                        <Link to='/gallery' className="link link-hover">Gallery</Link>
-                        <Link to='/about' className="link link-hover">About Us</Link>
+                        <Link to='/allcraft' className="link link-hover">All Art & craft Items</Link>
+
                         {
                             user &&
                             <>
-                                <Link to='userprofile' className="link link-hover">User Profile</Link>
-                                <Link to='updateprofile' className="link link-hover">Update Profile</Link>
-                                <Link to='contact' className="link link-hover">Contact Us</Link>
+                                <Link to='/addcraft' className="link link-hover">Add Craft Item</Link>
+                                <Link to='/myallcraft' className="link link-hover">My Art&Craft List</Link>
 
                             </>
                         }
