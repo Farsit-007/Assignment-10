@@ -40,10 +40,10 @@ const Register = () => {
             })
     }
     return (
-        <div className="flex justify-center  items-center min-h-[700px] font-Mulish w-full  bg-cover" style={{ backgroundImage: `url(https://i.ibb.co/Sf0ws3p/2151004024-1.webp)` }}>
+        <div className="flex justify-center  items-center min-h-[700px] font-Mulish w-full  bg-cover" style={{ backgroundImage: `url(https://i.postimg.cc/63W5QQWC/three-dimensional-tree-with-foliage.webp)` }}>
 
             <div className="flex justify-center items-center min-h-screen">
-                <div className="flex flex-col md:w-[450px] animate__animated animate__zoomIn mt-8 p-10 pb-4 pt-2 rounded-xl text-white bg-opacity-5 backdrop-blur-3xl bg-transparent-white">
+                <div className="flex flex-col md:w-[450px] animate__animated animate__zoomIn mt-8 p-10 pb-4 pt-2 rounded-xl text-white bg-opacity-5 backdrop-blur-3xl bg-[#b7004f3d]">
                     <div className="mb-4 text-center border-b-2">
                         <h1 className="my-2 text-3xl font-bold  ">Register your account</h1>
                     </div>
@@ -111,7 +111,7 @@ const Register = () => {
                         </div>
                         <div className="space-y-2">
                             <div>
-                                <button type="submit" className="w-full px-8 py-2 font-bold rounded-md bg-blue-500 text-xl ">Register</button>
+                                <button type="submit" className="w-full px-8 py-2 font-bold rounded-md bg-[#b70050] text-xl ">Register</button>
                             </div>
                             <p className="px-6 text-sm text-center text-gray-300">Already have an account?
                                 <Link to="/login" className="hover:underline pl-1 text-red-600 font-extrabold">Login</Link>

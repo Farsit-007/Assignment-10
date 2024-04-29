@@ -72,9 +72,9 @@ const Login = () => {
 
 
     return (
-        <div className="flex   justify-center  items-center min-h-screen font-Mulish w-full bg-cover" style={{ backgroundImage: `url(https://i.ibb.co/yB20QHr/2150799775-1.jpg)` }}>
+        <div className="flex   justify-center  items-center min-h-screen font-Mulish w-full bg-cover" style={{ backgroundImage: `url(https://i.postimg.cc/kX25PqHb/tree-with-two-seasons-compared-scene-generative-ai.webp)` }}>
             <div className="flex justify-center  items-center min-h-screen">
-                <div className="flex text-white flex-col animate__animated animate__zoomIn bg-opacity-5 backdrop-blur-3xl bg-transparent-white  md:w-[450px] p-10 pb-4 pt-2 rounded-xl ">
+                <div className="flex text-white flex-col animate__animated animate__zoomIn bg-opacity-5 backdrop-blur-3xl bg-[#b7004f3d]  md:w-[450px] p-10 pb-4 pt-2 rounded-xl ">
                     <div className="mb-4 text-center border-b-2">
                         <h1 className="my-2 text-3xl font-bold text-white ">Login</h1>
                     </div>
@@ -128,7 +128,7 @@ const Login = () => {
                         </div>
                         <div className="pt-1">
                             <div>
-                                <button type="submit" className="w-full px-8 py-2 font-semibold rounded-md bg-blue-500  text-xl text-white">Login</button>
+                                <button type="submit" className="w-full px-8 py-2 font-semibold rounded-md bg-[#b70050]  text-xl text-white">Login</button>
                             </div>
 
                         </div>
