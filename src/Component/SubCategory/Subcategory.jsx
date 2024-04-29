@@ -3,6 +3,7 @@ import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 // Import Swiper styles
 import 'swiper/css';
@@ -13,6 +14,20 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import '../SubCategory/Sub.css'
 
 const Subcategory = () => {
+    const breakpoints = {
+        // For extra small screens (mobile phones):
+        320: {
+          slidesPerView: 1, // Show 1 slide on small screens
+        },
+        // For medium screens (tablets):
+        768: {
+          slidesPerView: 2, // Show 2 slides on medium screens
+        },
+        // For large screens (desktops):
+        1024: {
+          slidesPerView: 3, // Show 3 slides on large screens (default)
+        },
+      };
     const pagination = {
         clickable: true,
         renderBullet: function (index, className) {
@@ -42,7 +57,8 @@ const Subcategory = () => {
                 <h1 className="text-5xl">All Items <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
             <Swiper
-                slidesPerView={3}
+                
+                breakpoints={breakpoints}
                 spaceBetween={30}
                 loop={true}
                 pagination={pagination}

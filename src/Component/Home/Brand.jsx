@@ -14,13 +14,27 @@ const Brand = () => {
         words: ['Products'],
         loop: {},
     });
+    const breakpoints = {
+        // For extra small screens (mobile phones):
+        320: {
+          slidesPerView: 1, // Show 1 slide on small screens
+        },
+        // For medium screens (tablets):
+        768: {
+          slidesPerView: 3, // Show 2 slides on medium screens
+        },
+        // For large screens (desktops):
+        1024: {
+          slidesPerView: 4, // Show 3 slides on large screens (default)
+        },
+      };
     return (
         <div className='max-w-6xl my-20 mx-auto'>
             <div className="text-center my-16 App">
                 <h1 className="text-5xl"> Brands of Our <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
             <Swiper
-                slidesPerView={3}
+                breakpoints={breakpoints}
                 spaceBetween={30}
                 loop={true}
                 autoplay={{
