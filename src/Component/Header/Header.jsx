@@ -51,7 +51,7 @@ const Header = () => {
         logOut()
     }
     return (
-        <div className="">
+        <div className="font-Meri">
             <div className={`navbar lg:px-20 transition-all duration-1000 text-white z-10 fixed top-0 left-0 right-0 bg-transparent ${active ? "activecls" : ""}`}>
                 <div className="navbar-start ">
                     <div className="dropdown">

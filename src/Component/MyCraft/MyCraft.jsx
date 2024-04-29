@@ -68,7 +68,7 @@ const MyCraft = () => {
     };
 
     return (
-        <div>
+        <div className="font-Meri">
              <>
                     {items.length === 0 && (
                         <style>

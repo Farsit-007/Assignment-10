@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const CraftCard = ({ craft }) => {
     const { _id, item_name, image, category, processing_time, price, rating, customization, stock_status, description, email, userName } = craft;
     return (
-        <div>
+        <div className="font-Meri">
             <div className="card flex flex-col gap-2 card-compact  p-2 bg-base-100 shadow-xl">
                 <div className="relative">
                     <figure className="rounded-xl" style={{ height: '200px', width: '100%', overflow: 'hidden' }}>

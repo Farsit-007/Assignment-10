@@ -9,7 +9,7 @@ const Home = () => {
         loop: {},
     });
     return (
-        <div>
+        <div className="font-Meri">
             <Banner></Banner>
             <CraftPage></CraftPage>
             <section className="my-20">

@@ -22,7 +22,7 @@ const CraftPage = () => {
     });
 
     return (
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl font-Meri mx-auto">
             <div className="text-center my-10 App">
                 <h1 className="text-5xl">Crafts <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>

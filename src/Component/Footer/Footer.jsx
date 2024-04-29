@@ -5,7 +5,7 @@ import { useContext } from "react";
 const Footer = () => {
     const { user } = useContext(AuthContext);
     return (
-        <div className="font-Mulish bg-[#05030a]">
+        <div className="font-Meri bg-[#05030a]">
             <footer className="footer p-10 max-w-6xl mx-auto footer-center lg:footer pb-2 bg-[#05030a] text-white">
                 <aside>
                     <div className='flex flex-col lg:flex-row gap-4 items-center'>

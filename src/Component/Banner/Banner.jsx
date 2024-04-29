@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from 'react-icons/io';
 const Banner = () => {
     return (
-        <div className='z-20  font-Mulish'>
+        <div className='z-20 font-Meri '>
             <Swiper navigation={true}
                 autoplay={{
                     delay: 4000,

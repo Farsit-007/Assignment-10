@@ -40,7 +40,7 @@ const Register = () => {
             })
     }
     return (
-        <div className="flex justify-center  items-center min-h-[700px] font-Mulish w-full  bg-cover" style={{ backgroundImage: `url(https://i.postimg.cc/63W5QQWC/three-dimensional-tree-with-foliage.webp)` }}>
+        <div className="flex justify-center  items-center min-h-[700px] font-Meri w-full  bg-cover" style={{ backgroundImage: `url(https://i.postimg.cc/63W5QQWC/three-dimensional-tree-with-foliage.webp)` }}>
 
             <div className="flex justify-center items-center min-h-screen">
                 <div className="flex flex-col md:w-[450px] animate__animated animate__zoomIn mt-8 p-10 pb-4 pt-2 rounded-xl text-white bg-opacity-5 backdrop-blur-3xl bg-[#b7004f3d]">

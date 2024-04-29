@@ -52,7 +52,7 @@ const Subcategory = () => {
     }, []);
 
     return (
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-6xl font-Meri mx-auto'>
             <div className="text-center my-10">
                 <h1 className="text-5xl">All Items <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
