@@ -1,9 +1,12 @@
 import { FaSadTear } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 const Error = () => {
     return (
         <div className="font-Meri">
+              <Helmet>
+                <title>FaLi's Craft | Error</title>
+            </Helmet>
              <section className="flex items-center min-h-screen p-16 dark:bg-gray-50 dark:text-gray-800">
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
                     <div className="max-w-md text-center">

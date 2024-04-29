@@ -3,6 +3,7 @@ import CraftPage from "../CraftItems/CraftPage";
 import Subcategory from "../SubCategory/Subcategory";
 import Brand from "./Brand";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+import { Helmet } from "react-helmet-async";
 const Home = () => {
     const [text] = useTypewriter({
         words: ['Gallery'],
@@ -10,6 +11,9 @@ const Home = () => {
     });
     return (
         <div className="font-Meri">
+              <Helmet>
+                <title>FaLi's Craft | Home</title>
+            </Helmet>
             <Banner></Banner>
             <CraftPage></CraftPage>
             <section className="my-20">

@@ -4,6 +4,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import lottie from '../../assets/Animation - 1714293694773.json'
 import { Player } from '@lottiefiles/react-lottie-player';
+import { Helmet } from "react-helmet-async";
 const UpdateCraft = () => {
     const { user } = useContext(AuthContext)
     const { id } = useParams();
@@ -51,7 +52,10 @@ const UpdateCraft = () => {
     }
 
     return (
-        <div>
+        <div className="font-Meri">
+              <Helmet>
+                <title>FaLi's Craft | Update Craft</title>
+            </Helmet>
             <section className="font-Meri">
                 <div className=" bg-cover max-h-[300px] bg-slate-50 " style={{ backgroundImage: `url(https://i.postimg.cc/VvmGMxHr/1-1.webp)` }}>
                     <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">

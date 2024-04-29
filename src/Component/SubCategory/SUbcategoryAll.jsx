@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { BiSolidCategory } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 import { IoSettings, IoTime } from "react-icons/io5";
@@ -20,6 +21,9 @@ const SUbcategoryAll = () => {
     }, [category])
     return (
         <div className="font-Meri">
+              <Helmet>
+                <title>FaLi's Craft | Categories</title>
+            </Helmet>
              {loading ? (
                 <div className="flex justify-center items-center min-h-screen">
                     <span className="loading loading-spinner loading-lg"></span>
