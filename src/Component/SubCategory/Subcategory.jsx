@@ -1,11 +1,26 @@
 import { useEffect, useState } from 'react';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Autoplay, Pagination } from 'swiper/modules';
+import '../SubCategory/Sub.css'
 
 const Subcategory = () => {
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      };
     const [text] = useTypewriter({
-        words: ['Items', 'Items'],
+        words: ['Categories'],
         loop: {},
     });
 
@@ -19,48 +34,61 @@ const Subcategory = () => {
                 setSubCrafts(data);
                 setLoading(false);
             })
-            
     }, []);
 
     return (
         <div className='max-w-6xl mx-auto'>
             <div className="text-center my-10">
-                <h1 className="text-5xl">Crafts <span className="text-[#b70050]">{text}<Cursor /></span></h1>
+                <h1 className="text-5xl">All Items <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
-
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                loop={true}
+                pagination={pagination}
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }}
+               
+                modules={[Pagination, Autoplay]}
+                className="mySwiper"
+            >
+                
             {loading ? (
                 <div className="flex justify-center items-center h-screen">
                     <span className="loading loading-spinner loading-lg"></span>
                     <div className="spinner-border text-[#b70050]"></div>
                 </div>
             ) : (
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-                    {subCrafts.map(sub => (
-                        <div key={sub._id} className="card text-center flex flex-col gap-2 card-compact p-2 bg-base-100 shadow-xl">
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 '>
+                    {subCrafts.map(sub => (  <SwiperSlide className='py-10' key={sub._id}>
+                        <div  className="card text-center flex flex-col gap-2 card-compact p-2 bg-base-100 shadow-xl">
                             <div className="relative">
-                                <figure className="rounded-xl" style={{ height: '240px', width: '100%', overflow: 'hidden' }}>
+                                <figure className="rounded-xl" style={{ height: '200px', width: '100%', overflow: 'hidden' }}>
                                     <img src={sub.image} alt="Craft" className="object-cover h-full w-full" />
                                 </figure>
                             </div>
 
-                            <div className="space-y-1 text-center">
+                            <div className=" text-center">
                                 <h2 className="h-10 font-semibold text-xl">{sub.category}</h2>
-                                <div className="h-14">
+                                <div className="h-14 p-2">
                                     <p>{sub.description}</p>
                                 </div>
                             </div>
 
-                            <div className="card-actions justify-center items-end pt-2 mr-3">
-                                <Link to={`/suball/${sub.category}`}>
+                            <div className="card-actions justify-center my-2 items-end pt-8 mr-3">
+                                <Link  to={`/suball/${sub.category}`}>
                                     <button className="bg-transparent text-lg font-bold border border-[#b70050] text-[#b70050] rounded-md p-2 flex gap-1 items-center hover:text-white hover:bg-[#b70050] transition-all duration-1000">
-                                        <MdKeyboardDoubleArrowRight size={30} /> View Details
+                                        <MdKeyboardDoubleArrowRight size={30} /> View More
                                     </button>
                                 </Link>
                             </div>
                         </div>
-                    ))}
+                        </SwiperSlide>))}
                 </div>
             )}
+            </Swiper>
         </div>
     );
 };

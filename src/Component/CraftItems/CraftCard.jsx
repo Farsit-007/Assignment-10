@@ -11,7 +11,7 @@ const CraftCard = ({ craft }) => {
         <div>
             <div className="card flex flex-col gap-2 card-compact  p-2 bg-base-100 shadow-xl">
                 <div className="relative">
-                    <figure className="rounded-xl" style={{ height: '240px', width: '100%', overflow: 'hidden' }}>
+                    <figure className="rounded-xl" style={{ height: '200px', width: '100%', overflow: 'hidden' }}>
                         <img src={image} alt="Shoes" className="object-cover h-full w-full" />
                     </figure>
                     <div className="absolute top-3 left-3">

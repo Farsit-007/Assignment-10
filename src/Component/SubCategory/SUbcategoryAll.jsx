@@ -19,8 +19,8 @@ const SUbcategoryAll = () => {
             });
     }, [category])
     return (
-        <div>
-             {loading ? ( // Show loading spinner if loading is true
+        <div className="">
+             {loading ? (
                 <div className="flex justify-center items-center min-h-screen">
                     <span className="loading loading-spinner loading-lg"></span>
                 </div>
@@ -42,7 +42,7 @@ const SUbcategoryAll = () => {
                     </div>
                 </div>
             </section>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl my-10 mx-auto">
              {items.map(item=> <div key={item._id} className="card flex flex-col gap-2 card-compact  p-2 bg-base-100 shadow-xl">
                 <div className="relative">
                     <figure className="rounded-xl" style={{ height: '240px', width: '100%', overflow: 'hidden' }}>
