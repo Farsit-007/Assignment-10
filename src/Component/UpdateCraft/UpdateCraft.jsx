@@ -9,7 +9,7 @@ const UpdateCraft = () => {
     const { id } = useParams();
     const [singleCraft, setsingleCraft] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/singlecraft/${id}`)
+        fetch(`https://assignment-10-server-site-psi.vercel.app/singlecraft/${id}`)
             .then(res => res.json())
             .then(data => {
                 setsingleCraft(data)
@@ -32,7 +32,7 @@ const UpdateCraft = () => {
         const userName = user.displayName
         const item = { item_name, image, email, userName, category, processing_time, price, rating, customization, stock_status, description }
         console.log(item);
-        fetch(`http://localhost:5000/singlecraft/${id}`, {
+        fetch(`https://assignment-10-server-site-psi.vercel.app/singlecraft/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json',

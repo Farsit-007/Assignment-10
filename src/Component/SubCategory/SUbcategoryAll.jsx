@@ -9,24 +9,32 @@ import {  Link, useParams } from "react-router-dom";
 const SUbcategoryAll = () => {
     const { category } = useParams();
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch(`http://localhost:5000/category/${category}`)
+        fetch(`https://assignment-10-server-site-psi.vercel.app/category/${category}`)
             .then((res) => res.json())
             .then((data) => {
                 setItems(data);
+                setLoading(false);
             });
     }, [category])
     return (
         <div>
-              {items.length === 0 && (
-                <style>
-                    {`
-                        .section-no-cards {
-                            margin-bottom: 169px; // Apply desired bottom margin
-                        }
-                    `}
-                </style>
-            )}
+             {loading ? ( // Show loading spinner if loading is true
+                <div className="flex justify-center items-center min-h-screen">
+                    <span className="loading loading-spinner loading-lg"></span>
+                </div>
+            ) : (
+                <>
+                    {items.length === 0 && (
+                        <style>
+                            {`
+                                .section-no-cards {
+                                    margin-bottom: 169px;
+                                }
+                            `}
+                        </style>
+                    )}
              <section className="section-no-cards">
                 <div className=" bg-cover max-h-[300px] bg-slate-50 " style={{ backgroundImage: `url(https://i.postimg.cc/tCf3tM3h/autumn-leaves-fall-gracefully-painting-nature-canvas-generative-ai.webp)` }}>
                     <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
@@ -77,6 +85,8 @@ const SUbcategoryAll = () => {
                 </div>
             </div>)}
         </div>
+        </>
+            )}
         </div>
     );
 };

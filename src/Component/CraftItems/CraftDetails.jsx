@@ -39,7 +39,7 @@ const CraftDetails = () => {
 
                                             <th>Price </th>
                                             <td>:</td>
-                                            <td>{price}</td>
+                                            <td> $ {price}</td>
 
                                         </tr >
 

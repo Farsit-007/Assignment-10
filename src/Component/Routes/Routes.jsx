@@ -38,12 +38,12 @@ const router = createBrowserRouter([
             {
                 path : '/craft/:id',
                 element:<PrivateRoute><CraftDetails></CraftDetails></PrivateRoute>,
-                loader:({params})=> fetch(`http://localhost:5000/items/${params.id}`)
+                loader:({params})=> fetch(`https://assignment-10-server-site-psi.vercel.app/items/${params.id}`)
             },
             {
                 path : '/allcraft',
                 element:<AllCraft></AllCraft>,
-                loader : ()=> fetch('http://localhost:5000/items')
+                loader : ()=> fetch('https://assignment-10-server-site-psi.vercel.app/items')
             },
             {
                 path : '/myallcraft',
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
             {
                 path : '/suball/:category',
                 element:<SUbcategoryAll></SUbcategoryAll>,
-                loader : ({params})=> fetch(`http://localhost:5000/category/${params.category}`)
+                loader : ({params})=> fetch(`https://assignment-10-server-site-psi.vercel.app/category/${params.category}`)
             },
         ]
     },

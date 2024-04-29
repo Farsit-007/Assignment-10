@@ -28,7 +28,7 @@ const AddCraft = () => {
         }
         const item = { item_name, image, category, processing_time, price, rating, customization, stock_status, description, email, userName }
         console.log(item);
-        fetch('http://localhost:5000/items', {
+        fetch('https://assignment-10-server-site-psi.vercel.app/items', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
