@@ -7,7 +7,7 @@ const CraftDetails = () => {
     const data = useLoaderData()
     const { item_name, image, category, processing_time, price, rating, customization, stock_status, description, userName, email } = data;
     return (
-        <div className="font-Meri">
+        <div className="font-Meri ">
             <Helmet>
                 <title>FaLi's Craft | Crafts Details</title>
             </Helmet>
@@ -20,7 +20,7 @@ const CraftDetails = () => {
                     </Fade>
                 </div>
             </section>
-            <div className="card max-w-6xl  my-10 sm:card-side  mt-10 mx-auto bg-base-100">
+            <div className="card max-w-6xl  my-20 sm:card-side mx-auto bg-base-100">
                 <div className="flex md:w-[45%] justify-center min-h-[500px] items-center rounded-xl  bg-[#b7004f13]">
                     <figure className="" style={{ height: '80%', width: '80%', overflow: 'hidden' }}>
                         <img src={image} alt="Shoes" className="object-cover rounded-lg h-full w-full" />
