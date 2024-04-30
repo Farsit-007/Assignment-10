@@ -34,15 +34,15 @@ const Header = () => {
 
 
     const Links = < >
-        <li className="text-[16px] font-bold"><NavLink to='/' className={({ isActive }) => isActive ? 'text-white  focus:text-white border-b-4 border-[#b70050]  font-bold ' : 'font-bold bg-transparent text-white'} >Home</NavLink></li>
-        <li className="text-[16px] font-bold"><NavLink to='/allcraft' className={({ isActive }) => isActive ? 'text-white focus:text-white border-b-4 border-[#b70050]  font-bold ' : 'font-bold bg-transparent text-white'} >All Art & craft Items</NavLink></li>
+        <li className="text-lg font-bold"><NavLink to='/' className={({ isActive }) => isActive ? 'text-white  focus:text-white border-b-4 border-[#b70050]  font-bold ' : 'font-bold bg-transparent text-white'} >Home</NavLink></li>
+        <li className="text-lg font-bold"><NavLink to='/allcraft' className={({ isActive }) => isActive ? 'text-white focus:text-white border-b-4 border-[#b70050]  font-bold ' : 'font-bold bg-transparent text-white'} >All Art & craft Items</NavLink></li>
         {
             user &&
             <>
-                <li className="text-[16px] font-bold">
+                <li className="text-lg font-bold">
                     <NavLink to='/addcraft' className={({ isActive }) => isActive ? 'text-white focus:text-white border-b-4 border-[#b70050]  font-bold ' : 'font-bold bg-transparent text-white'} >Add Craft Item</NavLink>
                 </li>
-                <li className="text-[16px] font-bold">
+                <li className="text-lg font-bold">
                     <NavLink to='/myallcraft' className={({ isActive }) => isActive ? 'text-white focus:text-white border-b-4 border-[#b70050]  font-bold ' : 'font-bold bg-transparent text-white'} >My Art&Craft List</NavLink>
                 </li>
             </>

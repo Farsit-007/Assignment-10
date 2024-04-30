@@ -73,7 +73,7 @@ const Login = () => {
 
 
     return (
-        <div className="flex   justify-center  items-center min-h-screen font-Meri w-full bg-cover" style={{ backgroundImage: `url(https://i.postimg.cc/kX25PqHb/tree-with-two-seasons-compared-scene-generative-ai.webp)` }}>
+        <div className="flex  pt-6 justify-center  items-center min-h-screen font-Meri w-full bg-cover" style={{ backgroundImage: `url(https://i.postimg.cc/kX25PqHb/tree-with-two-seasons-compared-scene-generative-ai.webp)` }}>
               <Helmet>
                 <title>FaLi's Craft | Login</title>
             </Helmet>

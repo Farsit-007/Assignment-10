@@ -79,7 +79,7 @@ const UpdateCraft = () => {
                         </Player>
                     </div>
                 </div>
-                <form onSubmit={handleupdate} className="w-[90%] md:w-[60%] mx-auto">
+                <form onSubmit={handleupdate} className="w-[90%] my-5 md:w-[60%] mx-auto">
                     <div className="flex flex-col md:flex-row gap-5">
                         <label className="form-control w-full">
                             <div className="label">
