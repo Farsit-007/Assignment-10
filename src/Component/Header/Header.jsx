@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import '../Header/Header.css';
 import { Tooltip } from 'react-tooltip'
+import f1 from '../../assets/1.png'
 import { AuthContext } from "../AuthProvider/AuthProvider";
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -63,7 +64,9 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="flex gap-3 items-center">
-
+                    <div className="w-[30px] h-[30px] md:w-[50px] hidden md:block md:h-[50px]">
+                    <img src={f1} alt="" />
+                    </div>
                         <Link to='/' className="text-xl md:text-3xl text-[#b70050] font-extrabold ">Fa<span className="text-white" >L</span>i's  Cra<span className="text-white" >f</span>t</Link>
                     </div>
                 </div>

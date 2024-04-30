@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useContext } from "react";
-
+import im from '../../assets/1.png'
 const Footer = () => {
     const { user } = useContext(AuthContext);
     return (
         <div className="font-Meri bg-[#05030a]">
-            <footer className="footer p-10 max-w-6xl mx-auto footer-center lg:footer pb-2 bg-[#05030a] text-white">
+            <footer className="footer py-10 max-w-6xl mx-auto footer-center lg:footer pb-2 bg-[#05030a] text-white">
                 <aside>
                     <div className='flex flex-col lg:flex-row gap-4 items-center'>
                         <figure className='h-[60px] w-[60px]' >
-
+                              <img src={im}  alt="" />
                         </figure>
                         <div>
                             <h1 className="text-2xl md:text-3xl text-[#b70050] font-extrabold ">Fa<span className="text-white" >L</span>i's  Cra<span className="text-white" >f</span>t</h1>
