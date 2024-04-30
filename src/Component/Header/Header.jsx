@@ -76,7 +76,7 @@ const Header = () => {
                     </ul>
                 </div>
                 {
-                user ? <div className="pl-[90px] md:pl-60 lg:pl-4"><a id="clickable"><div className="w-[45px] cursor-pointer rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                user ? <div className="pl-[90px] md:pl-60 lg:pl-4"><a id="clickable"><div className="w-[45px] cursor-pointer rounded-full ring ring-[#b70050] ring-offset-base-100 ring-offset-2">
                     <img className="w-full rounded-full" src={user?.photoURL || "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
                 </div></a>
                     <Tooltip className="bg-[#b70050] rounded-xl p-2 space-y-3" anchorSelect="#clickable" clickable>
