@@ -73,7 +73,7 @@ const AddCraft = () => {
                     style={{ height: '100px', width: '300px' }}
                 >
                 </Player>
-                <form onSubmit={handleAdd} className="w-[90%] my-5 md:w-[60%] mx-auto">
+                <form onSubmit={handleAdd} className="w-[90%] my-10 md:my-5 md:w-[60%] mx-auto">
                     <div className="flex flex-col md:flex-row gap-5">
                         <label className="form-control w-full">
                             <div className="label">
