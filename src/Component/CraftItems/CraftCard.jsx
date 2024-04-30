@@ -42,7 +42,7 @@ const CraftCard = ({ craft }) => {
                         </div>
                         <div className="flex gap-2 font-semibold items-center">
                             <IoSettings className="text-[#b70050]" size={20} />
-                            {customization}
+                            <div className="badge badge-ghost bg-[#b7004fc4] border-none font-semibold text-white text-md "> {customization}</div>
                         </div>
                     </div>
 
