@@ -59,7 +59,7 @@ const AllCraft = () => {
                                     </td>
                                     <td>{item.item_name}</td>
                                     <td>$ {item.price}</td>
-                                    <td>{item.customization}</td>
+                                    <td><div className="badge badge-ghost bg-[#b7004fc7] border-none font-semibold text-white text-md ">{item.customization}</div></td>
                                     <td className="flex justify-center h-36 items-center">
                                         <Link to={`/craft/${item._id}`}>
                                             <button className="bg-transparent text-[12px] md:text-lg font-bold border border-[#b70050] text-[#b70050] rounded-md p-2 flex gap-1 items-center hover:text-white hover:bg-[#b70050] transition-all duration-1000">

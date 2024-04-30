@@ -109,9 +109,9 @@ const MyCraft = () => {
                         <div className="spinner-border text-[#b70050]"></div>
                     </div>
                 ) : (
-                    <div className="py-10 grid lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
+                    <div className="py-10 px-5 lg:px-0 grid lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
                         {
-                            displayedItems.map(item => <div key={item._id} className=" flex flex-col md:flex-row md:items-center gap-4 p-2 bg-base-100 shadow-xl">
+                            displayedItems.map(item => <div key={item._id} className=" flex flex-col md:flex-row md:items-center rounded-lg gap-4 p-2 bg-base-100 shadow-xl">
                                 <div className="relative md:w-[45%] ">
                                     <figure className="rounded-xl" style={{ height: '180px', width: '100%', overflow: 'hidden' }}>
                                         <img src={item.image} alt="Shoes" className="object-cover h-full w-full" />
@@ -136,7 +136,7 @@ const MyCraft = () => {
 
                                         <div className="flex gap-2 font-semibold items-center">
                                             <h1>Customization : </h1>
-                                            {item.customization}
+                                            <div className="badge badge-ghost bg-[#b7004fc7] border-none font-semibold text-white text-md ">{item.customization}</div>
                                         </div>
                                     </div>
                                     <div className="flex justify-center gap-2 mr-3">

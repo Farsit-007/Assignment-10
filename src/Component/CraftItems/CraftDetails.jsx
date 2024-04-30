@@ -77,7 +77,7 @@ const CraftDetails = () => {
 
                                             <th>Customization </th>
                                             <td>:</td>
-                                            <td>{customization}</td>
+                                            <td><div className="badge badge-ghost bg-[#b7004fc7] border-none font-semibold text-white text-md ">{customization}</div></td>
 
                                         </tr>
                                         <tr className=''>

@@ -5,6 +5,7 @@ import Brand from "./Brand";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import { Helmet } from "react-helmet-async";
 import { ScrollRestoration } from "react-router-dom";
+import Contact from "../Contact/Contact";
 const Home = () => {
     const [text] = useTypewriter({
         words: ['Gallery'],
@@ -69,6 +70,7 @@ const Home = () => {
             </section>
             <Subcategory></Subcategory>
             <Brand></Brand>
+            <Contact></Contact>
             <ScrollRestoration />
         </div>
 
