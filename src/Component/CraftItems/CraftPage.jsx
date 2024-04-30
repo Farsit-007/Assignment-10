@@ -24,7 +24,7 @@ const CraftPage = () => {
     return (
         <div className="max-w-6xl font-Meri mx-auto">
             <div className="text-center my-10 App">
-                <h1 className="text-5xl">Crafts <span className="text-[#b70050]">{text}<Cursor /></span></h1>
+                <h1 className="text-3xl md:text-5xl">Crafts <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
 
             
@@ -34,7 +34,7 @@ const CraftPage = () => {
                     <div className="spinner-border text-[#b70050]"></div>
                 </div>
             ) : (
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 p-5 md:p-0 gap-8">
                     {crafts.slice(0, 6).map(craft => (
                         <CraftCard key={craft._id} craft={craft} />
                     ))}

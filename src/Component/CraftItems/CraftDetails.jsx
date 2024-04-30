@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import { useLoaderData } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { ScrollRestoration } from "react-router-dom";
 const CraftDetails = () => {
     const data = useLoaderData()
     const { item_name, image, category, processing_time, price, rating, customization, stock_status, description, userName, email } = data;
@@ -99,6 +100,7 @@ const CraftDetails = () => {
                     </div>
                 </div>
             </div>
+            <ScrollRestoration />
         </div>
     );
 };

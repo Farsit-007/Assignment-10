@@ -54,7 +54,7 @@ const Subcategory = () => {
     return (
         <div className='max-w-6xl font-Meri mx-auto'>
             <div className="text-center my-10">
-                <h1 className="text-5xl">All Items <span className="text-[#b70050]">{text}<Cursor /></span></h1>
+                <h1 className="text-3xl md:text-5xl">All Items <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
             <Swiper
                 
@@ -77,9 +77,9 @@ const Subcategory = () => {
                     <div className="spinner-border text-[#b70050]"></div>
                 </div>
             ) : (
-                <div className='grid md:grid-cols-2 lg:grid-cols-3 '>
-                    {subCrafts.map(sub => (  <SwiperSlide className='py-10' key={sub._id}>
-                        <div  className="card text-center flex flex-col gap-2 card-compact p-2 bg-base-100 shadow-xl">
+                <div className='grid md:grid-cols-2  lg:grid-cols-3 '>
+                    {subCrafts.map(sub => (  <SwiperSlide className='py-10 p-5 md:p-0' key={sub._id}>
+                        <div  className="card  text-center flex flex-col gap-2 card-compact p-2 bg-base-100 shadow-xl">
                             <div className="relative">
                                 <figure className="rounded-xl" style={{ height: '200px', width: '100%', overflow: 'hidden' }}>
                                     <img src={sub.image} alt="Craft" className="object-cover h-full w-full" />

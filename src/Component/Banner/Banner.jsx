@@ -5,6 +5,7 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import '../Banner/Banner.css'
 import { Link } from 'react-router-dom';
 import { IoIosArrowForward } from 'react-icons/io';
+import { Fade } from 'react-awesome-reveal';
 const Banner = () => {
     return (
         <div className='z-20 font-Meri '>
@@ -23,12 +24,14 @@ const Banner = () => {
                         <div className='w-[80%] mx-auto flex flex-col-reverse md:flex-row gap-12 items-center'>
 
                             <div>
-                                <div className='w-[90%] md:w-[70%] mx-auto text-center p-8  rounded-xl bg-opacity-5 backdrop-blur-3xl bg-[#b7004f46]'>
-                                    <h1 className='text-white font-bold text-3xl'>Let Your Creativity Flourish with Our Extensive Selection of Artistic Treasures. </h1>
-                                    <div className='flex justify-center'>
-                                        <Link to={'/allcraft'}><button className='border mt-5 rounded-lg bg-transparent animate__animated  animate__fadeInLeft border-white py-2 px-4 font-bold text-white flex gap-1 items-center hover:bg-[#b70050] transition-all duration-1000'>About Items<IoIosArrowForward size={25} /></button></Link>
+                                <Fade direction={'up'}>
+                                    <div className='w-[90%] md:w-[70%] mx-auto text-center p-8  rounded-xl bg-opacity-5 backdrop-blur-3xl bg-[#b7004f46]'>
+                                        <h1 className='text-white font-bold text-xl md:text-3xl'>Let Your Creativity Flourish with Our Extensive Selection of Artistic Treasures. </h1>
+                                        <div className='flex justify-center'>
+                                            <Link to={'/allcraft'}><button className='border mt-5 rounded-lg bg-transparent animate__animated  animate__fadeInLeft border-white py-2 px-4 font-bold text-white flex gap-1 items-center hover:bg-[#b70050] transition-all duration-1000'>About Items<IoIosArrowForward size={25} /></button></Link>
+                                        </div>
                                     </div>
-                                </div>
+                                </Fade>
 
                             </div>
                         </div>
@@ -41,16 +44,17 @@ const Banner = () => {
 
 
                             <div>
+                            <Fade direction={'up'}>
                                 <div className='w-[90%] md:w-[70%] mx-auto text-center p-8  rounded-xl bg-opacity-5 backdrop-blur-3xl bg-[#b7004f46]'>
-                                    <h1 className='text-white font-bold text-3xl'>Discover a World of Inspiration and Quality Art Materials at Our Online Store. </h1>
+                                    <h1 className='text-white font-bold text-xl md:text-3xl'>Discover a World of Inspiration and Quality Art Materials at Our Online Store. </h1>
                                     <div className='flex justify-center'>
                                         <Link to={'/allcraft'}><button className='border mt-5 rounded-lg bg-transparent animate__animated  animate__fadeInLeft border-white py-2 px-4 font-bold text-white flex gap-1 items-center hover:bg-[#b70050] transition-all duration-1000'>About Items<IoIosArrowForward size={25} /></button></Link>
                                     </div>
                                 </div>
-
+                                </Fade>
                             </div>
 
-                            
+
                         </div>
                     </div>
                 </SwiperSlide>
@@ -59,16 +63,17 @@ const Banner = () => {
                     <div className='w-full flex justify-start items-center h-screen bg-cover' style={{ backgroundImage: `url(https://i.postimg.cc/8PGqhS86/oil-paint-tubes-painting.webp)` }} >
                         <div className='w-[80%] mx-auto flex flex-col-reverse md:flex-row gap-12 items-center'>
 
-                        <div>
+                            <div>
+                            <Fade direction={'up'}>
                                 <div className='w-[90%] md:w-[70%] mx-auto text-center p-8  rounded-xl bg-opacity-5 backdrop-blur-3xl bg-[#b7004f46]'>
-                                    <h1 className='text-white font-bold text-3xl'>Ignite your creativity with our handpicked art supplies to elevate your artistic journey!</h1>
+                                    <h1 className='text-white font-bold text-xl md:text-3xl'>Ignite your creativity with our handpicked art supplies to elevate your artistic journey!</h1>
                                     <div className='flex justify-center'>
                                         <Link to={'/allcraft'}><button className='border mt-5 rounded-lg bg-transparent animate__animated  animate__fadeInLeft border-white py-2 px-4 font-bold text-white flex gap-1 items-center hover:bg-[#b70050] transition-all duration-1000'>About Items<IoIosArrowForward size={25} /></button></Link>
                                     </div>
                                 </div>
-
+                                </Fade>
                             </div>
-                        
+
                         </div>
                     </div>
                 </SwiperSlide>

@@ -31,7 +31,7 @@ const Brand = () => {
     return (
         <div className='max-w-6xl my-20 font-Meri mx-auto'>
             <div className="text-center my-16 App">
-                <h1 className="text-5xl"> Brands of Our <span className="text-[#b70050]">{text}<Cursor /></span></h1>
+                <h1 className="text-3xl md:text-5xl"> Brands of Our <span className="text-[#b70050]">{text}<Cursor /></span></h1>
             </div>
             <Swiper
                 breakpoints={breakpoints}

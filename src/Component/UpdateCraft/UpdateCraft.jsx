@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import lottie from '../../assets/Animation - 1714293694773.json'
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Helmet } from "react-helmet-async";
+import { ScrollRestoration } from "react-router-dom";
 const UpdateCraft = () => {
     const { user } = useContext(AuthContext)
     const { id } = useParams();
@@ -197,7 +198,7 @@ const UpdateCraft = () => {
                 </form>
 
 
-
+                <ScrollRestoration />
             </div>
         </div>
     );

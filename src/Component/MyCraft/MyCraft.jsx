@@ -6,7 +6,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import Swal from "sweetalert2";
 import { FaStar } from "react-icons/fa";
 import { Helmet } from "react-helmet";
-
+import { ScrollRestoration } from "react-router-dom";
 const MyCraft = () => {
     const { user } = useContext(AuthContext);
     const [items, setItems] = useState([]);
@@ -101,12 +101,12 @@ const MyCraft = () => {
                     </details>
                 </div>
                 {loading ? (
-                    <div className="flex flex-col justify-start items-center">
+                    <div className="flex flex-col justify-start items-center ">
                         <span className="loading loading-spinner loading-lg"></span>
                         <div className="spinner-border text-[#b70050]"></div>
                     </div>
                 ) : (
-                    <div className="pt-10 grid lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
+                    <div className="py-10 grid lg:grid-cols-2 gap-5 max-w-6xl mx-auto">
                         {
                             displayedItems.map(item => <div key={item._id} className=" flex flex-col md:flex-row md:items-center gap-4 p-2 bg-base-100 shadow-xl">
                                 <div className="relative md:w-[45%] ">
@@ -147,6 +147,7 @@ const MyCraft = () => {
                     </div>
                 )}
             </>
+            <ScrollRestoration />
         </div>
     );
 };

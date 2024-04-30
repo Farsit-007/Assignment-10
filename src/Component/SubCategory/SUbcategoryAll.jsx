@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 import { IoSettings, IoTime } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight, MdOutlineSell } from "react-icons/md";
 import {  Link, useParams } from "react-router-dom";
-
+import { ScrollRestoration } from "react-router-dom";
 const SUbcategoryAll = () => {
     const { category } = useParams();
     const [items, setItems] = useState([]);
@@ -46,7 +46,7 @@ const SUbcategoryAll = () => {
                     </div>
                 </div>
             </section>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl my-10 mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-5 md:p-0 max-w-6xl my-10 mx-auto">
              {items.map(item=> <div key={item._id} className="card flex flex-col gap-2 card-compact  p-2 bg-base-100 shadow-xl">
                 <div className="relative">
                     <figure className="rounded-xl" style={{ height: '240px', width: '100%', overflow: 'hidden' }}>
@@ -91,6 +91,7 @@ const SUbcategoryAll = () => {
         </div>
         </>
             )}
+            <ScrollRestoration />
         </div>
     );
 };

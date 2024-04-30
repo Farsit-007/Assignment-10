@@ -1,7 +1,7 @@
 
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link, useLoaderData } from "react-router-dom";
-
+import { ScrollRestoration } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 const AllCraft = () => {
     const Allitem = useLoaderData()
@@ -69,6 +69,7 @@ const AllCraft = () => {
                 </div>
             </div>
             </>
+            <ScrollRestoration />
         </div>
     );
 };

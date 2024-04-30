@@ -4,6 +4,7 @@ import Subcategory from "../SubCategory/Subcategory";
 import Brand from "./Brand";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import { Helmet } from "react-helmet-async";
+import { ScrollRestoration } from "react-router-dom";
 const Home = () => {
     const [text] = useTypewriter({
         words: ['Gallery'],
@@ -14,11 +15,12 @@ const Home = () => {
               <Helmet>
                 <title>FaLi's Craft | Home</title>
             </Helmet>
+            
             <Banner></Banner>
             <CraftPage></CraftPage>
             <section className="my-20">
                 <div className="text-center my-10">
-                    <h1 className="text-5xl">Arts & Craft <span className="text-[#b70050]">{text}<Cursor /></span></h1>
+                    <h1 className="text-3xl md:text-5xl">Arts & Craft <span className="text-[#b70050]">{text}<Cursor /></span></h1>
                 </div>
 
                 <div data-aos="fade-up"
@@ -67,6 +69,7 @@ const Home = () => {
             </section>
             <Subcategory></Subcategory>
             <Brand></Brand>
+            <ScrollRestoration />
         </div>
 
     );
