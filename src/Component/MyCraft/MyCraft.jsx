@@ -7,6 +7,7 @@ import Swal from "sweetalert2";
 import { FaStar } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 import { ScrollRestoration } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
 const MyCraft = () => {
     const { user } = useContext(AuthContext);
     const [items, setItems] = useState([]);
@@ -85,9 +86,11 @@ const MyCraft = () => {
                 )}
                 <section className="">
                     <div className=" bg-cover max-h-[300px] bg-slate-50 " style={{ backgroundImage: `url(https://i.postimg.cc/63W5QQWC/three-dimensional-tree-with-foliage.webp)` }}>
-                        <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
-                            <h1 className="text-4xl  mt-8 md:mt-0 font-bold leading-none sm:text-7xl xl:max-w-3xl text-white playfair animate__animated animate__bounce">My Art & Craft</h1>
-                        </div>
+                        <Fade direction={'down'}>
+                            <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
+                                <h1 className="text-4xl  mt-8 md:mt-0 font-bold leading-none sm:text-7xl xl:max-w-3xl text-white playfair ">My Art & Craft</h1>
+                            </div>
+                        </Fade>
                     </div>
                 </section>
                 <div className="flex  justify-end pr-8 items-center section-no-cards mt-6 max-w-6xl mx-auto">

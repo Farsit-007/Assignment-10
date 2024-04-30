@@ -23,7 +23,8 @@ Users can personalize their profiles, explore a variety of art & craft items, an
  #Package  :
               a. Lottie React
               b. React-simple-typewriter
-              c. React-tooltip
+              c. React Awesome reveal
+              d. React-tooltip
 
               
 

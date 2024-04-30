@@ -78,8 +78,8 @@ const Subcategory = () => {
                 </div>
             ) : (
                 <div className='grid md:grid-cols-2  lg:grid-cols-3 '>
-                    {subCrafts.map(sub => (  <SwiperSlide className='py-10 p-5 md:p-0' key={sub._id}>
-                        <div  className="card  text-center flex flex-col gap-2 card-compact p-2 bg-base-100 shadow-xl">
+                    {subCrafts.map(sub => (  <SwiperSlide className='py-10 px-5 md:px-0' key={sub._id}>
+                        <div  className="card text-center flex flex-col gap-2 card-compact p-2 bg-base-100 shadow-xl">
                             <div className="relative">
                                 <figure className="rounded-xl" style={{ height: '200px', width: '100%', overflow: 'hidden' }}>
                                     <img src={sub.image} alt="Craft" className="object-cover h-full w-full" />
