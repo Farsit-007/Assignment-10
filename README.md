@@ -22,9 +22,9 @@ Users can personalize their profiles, explore a variety of art & craft items, an
 
 
 # Major Features :
-  • Reviewa Systems <br/>
-  • Room Bookings <br/>
-  • hotels Locations <br/>
+  • Adding Arts & Crafts Products <br/>
+  • Comprehensive User Authentication <br/>
+  • Interactive CRUD Functionality <br/>
 
  # Technologies : 
   • React.js <br/>
