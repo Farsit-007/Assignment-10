@@ -21,13 +21,41 @@ With a responsive design, intuitive navigation, and visually appealing layout fe
 Users can personalize their profiles, explore a variety of art & craft items, and filter content based on preferences like customization options, enhancing usability and satisfaction.
 
 
- #Package  :
-              a. Lottie React
-              b. React-simple-typewriter
-              c. React Awesome reveal
-              d. React-tooltip
+# Major Features :
+  • Reviewa Systems <br/>
+  • Room Bookings <br/>
+  • hotels Locations <br/>
 
-              
+ # Technologies : 
+  • React.js <br/>
+  • Tailwind.css <br/>
+  • Firebase  <br/>
+  • React-router-dom <br/>
+  • Node.js <br/>
+  • Express.js <br/>
+  • MongoDb <br/>
+   
+  ### Setup .env file
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   ```js
+
+VITE_APIKEY = ...
+VITE_AUTHDOMAIN = ...
+VITE_PROJECTID = ...
+VITE_STORAGEBUCKET = ...
+VITE_MESSAGINGSENDERID = ...
+VITE_APPID = ...
+
+```
+
+### Install NPM
+
+```shell
+npm i
+```
+
+### Run the Project
+
+```shell
+npm run dev
+``` 
