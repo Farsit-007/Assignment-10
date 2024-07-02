@@ -1,8 +1,9 @@
-#Website Name -> FaLi's Craft
+# Website Name -> FaLi's Craft
 
-#Live Link -> https://assignment-10-d0f74.web.app/
+# [Live Link](https://assignment-10-d0f74.web.app/)
+# [Server Repository](https://github.com/Farsit-007/Assignment-10-Server)
 
-#Website Category -> Painting and Drawing
+# Overview
 
 • Focused Art & Craft Category: 
 The website specializes in a specific art & craft category, such as Painting and Drawing, offering a curated experience tailored to enthusiasts of this creative domain.
